@@ -1,0 +1,113 @@
+{
+  "ast": [
+    "or",
+    [
+      "not",
+      [
+        "in",
+        [
+          "column",
+          "status"
+        ],
+        [
+          [
+            "lit",
+            "closed"
+          ],
+          [
+            "lit",
+            null
+          ]
+        ]
+      ]
+    ],
+    [
+      "cmp",
+      ">=",
+      [
+        "column",
+        "score"
+      ],
+      [
+        "lit",
+        10
+      ]
+    ]
+  ],
+  "exit_code": 0,
+  "kept_rows": [
+    2
+  ],
+  "predicate": "status NOT IN ('closed', NULL) OR score >= 10",
+  "rows": [
+    {
+      "passes_where": false,
+      "result": "UNKNOWN",
+      "row": 0,
+      "trace": [
+        {
+          "operation": "in",
+          "result": "UNKNOWN"
+        },
+        {
+          "operation": "not",
+          "result": "UNKNOWN"
+        },
+        {
+          "operation": "cmp",
+          "result": "FALSE"
+        },
+        {
+          "operation": "or",
+          "result": "UNKNOWN"
+        }
+      ]
+    },
+    {
+      "passes_where": false,
+      "result": "UNKNOWN",
+      "row": 1,
+      "trace": [
+        {
+          "operation": "in",
+          "result": "TRUE"
+        },
+        {
+          "operation": "not",
+          "result": "FALSE"
+        },
+        {
+          "operation": "cmp",
+          "result": "UNKNOWN"
+        },
+        {
+          "operation": "or",
+          "result": "UNKNOWN"
+        }
+      ]
+    },
+    {
+      "passes_where": true,
+      "result": "TRUE",
+      "row": 2,
+      "trace": [
+        {
+          "operation": "in",
+          "result": "UNKNOWN"
+        },
+        {
+          "operation": "not",
+          "result": "UNKNOWN"
+        },
+        {
+          "operation": "cmp",
+          "result": "TRUE"
+        },
+        {
+          "operation": "or",
+          "result": "TRUE"
+        }
+      ]
+    }
+  ]
+}
