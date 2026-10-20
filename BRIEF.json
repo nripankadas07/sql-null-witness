@@ -1,0 +1,35 @@
+{
+  "occurrence": "GH-20261020",
+  "state": "VALIDATED",
+  "demand": "Inferred from the workflow and domain evidence; no verified request for this new tool.",
+  "acceptance": [
+    "Invented example retains only row2; the other two rows are UNKNOWN.",
+    "SQLite truth-table and row-expression oracle, precedence, escaped text, missing columns and deliberate rejection of coercion/full SQL.",
+    "Clean wheel install and installed CLI outside checkout; meaningful invalid input rejection without partial JSON."
+  ],
+  "discovery": "Public searchable README/topics and reproducible tiny examples; no outreach, adoption or growth claim.",
+  "inventory_compared": 203,
+  "mutual_distinction": "Nullable query predicates, dependency timing, token synchronization, road turn feasibility and finite-language inclusion have separate users and contracts. Shared packaging is infrastructure.",
+  "originality": "Original code and invented fixtures, AI-assisted. No third-party implementation or prose copied; standard algorithms reimplemented.",
+  "repo": "sql-null-witness",
+  "user": "Analysts debugging why nullable rows disappear from a WHERE clause.",
+  "pain": "A NOT IN list containing NULL can produce UNKNOWN, whose rows WHERE discards; a true/false-only mental model hides the cause.",
+  "capability": "Parse a strict SQL predicate subset and explain TRUE/FALSE/UNKNOWN results and retained row indexes with an AST and postorder trace.",
+  "alternatives": [
+    "tobymao/sqlglot",
+    "andialbrecht/sqlparse",
+    "macbre/sql-metadata"
+  ],
+  "query": "sql parser language:Python",
+  "highest": "tobymao/sqlglot",
+  "topics": [
+    "sql",
+    "null",
+    "debugging",
+    "python"
+  ],
+  "expected": "Invented example retains only row2; the other two rows are UNKNOWN.",
+  "limits": "Only one predicate: integer/text/NULL values, = <> != < <= > >=, IS [NOT] NULL, nonempty literal [NOT] IN lists, NOT/AND/OR and predicate parentheses. TRUE/FALSE/NULL may stand alone. No SELECT, joins, functions, arithmetic, quoted names, floating point, coercion, collation or database access. Column names match JSON keys exactly and are case sensitive. Comparisons require the same nonboolean integer/text type unless NULL. No short-circuit evaluation guarantee; every trace node is evaluated. Empty IN lists reject. Up to256 tokens/4096 predicate characters,1000 rows,100 keys per row; integers within \u00b110^15.",
+  "distinct": "Existing sqlite-plan-witness inspects plans, sqlite-fixture-closure extracts parent rows, sqlite-rehearsal rehearses SQL, and json tools compare structure. This explains nullable predicate semantics without connecting to or running a user database.",
+  "checks": "SQLite truth-table and row-expression oracle, precedence, escaped text, missing columns and deliberate rejection of coercion/full SQL."
+}

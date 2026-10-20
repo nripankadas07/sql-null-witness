@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-20",
+  "comparables": [
+    {
+      "full_name": "tobymao/sqlglot",
+      "html_url": "https://github.com/tobymao/sqlglot",
+      "stargazers_count": 9699,
+      "pushed_at": "2026-10-19T21:40:15Z",
+      "default_branch": "main",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "Python SQL Parser and Transpiler",
+      "observed": "2026-10-20T06:13:34.123Z",
+      "recent_open_items": [
+        {
+          "number": 8685,
+          "title": "MySQL bitwise operator tiers are mis-grouped during translation",
+          "url": "https://github.com/tobymao/sqlglot/issues/8685",
+          "is_pr": false
+        },
+        {
+          "number": 8684,
+          "title": "MySQL XOR is parsed at AND precedence and optimizer folds a true expression to false",
+          "url": "https://github.com/tobymao/sqlglot/issues/8684",
+          "is_pr": false
+        },
+        {
+          "number": 8683,
+          "title": "MySQL ! is emitted as lower-precedence NOT without preserving grouping",
+          "url": "https://github.com/tobymao/sqlglot/issues/8683",
+          "is_pr": false
+        }
+      ]
+    },
+    {
+      "full_name": "andialbrecht/sqlparse",
+      "html_url": "https://github.com/andialbrecht/sqlparse",
+      "stargazers_count": 4023,
+      "pushed_at": "2026-08-13T19:17:19Z",
+      "default_branch": "master",
+      "license": {
+        "key": "bsd-3-clause",
+        "name": "BSD 3-Clause \"New\" or \"Revised\" License",
+        "spdx_id": "BSD-3-Clause",
+        "url": "https://api.github.com/licenses/bsd-3-clause",
+        "node_id": "MDc6TGljZW5zZTU="
+      },
+      "description": "A non-validating SQL parser module for Python",
+      "observed": "2026-10-20T06:13:34.298Z",
+      "recent_open_items": [
+        {
+          "number": 936,
+          "title": "Fix statement splitting after whitespace-varied compound closers",
+          "url": "https://github.com/andialbrecht/sqlparse/pull/936",
+          "is_pr": true
+        },
+        {
+          "number": 935,
+          "title": "Preserve quoted newlines following backslashes",
+          "url": "https://github.com/andialbrecht/sqlparse/pull/935",
+          "is_pr": true
+        },
+        {
+          "number": 934,
+          "title": "Keep normalized whitespace in sync after filtering",
+          "url": "https://github.com/andialbrecht/sqlparse/pull/934",
+          "is_pr": true
+        }
+      ]
+    },
+    {
+      "full_name": "macbre/sql-metadata",
+      "html_url": "https://github.com/macbre/sql-metadata",
+      "stargazers_count": 889,
+      "pushed_at": "2026-10-19T02:47:12Z",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "Uses tokenized query returned by python-sqlparse and generates query metadata",
+      "observed": "2026-10-20T06:14:40.686Z",
+      "recent_open_items": []
+    }
+  ],
+  "query": {
+    "query": "sql parser language:Python",
+    "url": "https://github.com/search?q=sql+parser+language%3APython&type=repositories&s=stars&o=desc",
+    "observed": "2026-10-20T06:13:46.167Z"
+  },
+  "highest_star_relevant_found": "tobymao/sqlglot",
+  "limits": "Most-stars site search is scoped and keyword dependent, not an exhaustive global ranking. Also read manually found established comparables. Some leading keyword results are adjacent or irrelevant. Competitors not installed/timed/stress tested. No absence, reliability, superiority or performance claim. Issues/PRs are small current samples, not evidence of an unresolved competitor-wide defect.",
+  "read_sources": "Current repository READMEs, metadata and sampled issues; relevant implementations/fixtures for SQLGlot simplify, NetworkX DAG, criticalpath, PM4Py/SNAKES Petri semantics, OSRM restrictions and automata/brics inclusion. No source copied."
+}

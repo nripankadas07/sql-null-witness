@@ -1,0 +1,17 @@
+{
+  "predicate": "status NOT IN ('closed', NULL) OR score >= 10",
+  "rows": [
+    {
+      "status": "open",
+      "score": 3
+    },
+    {
+      "status": "closed",
+      "score": null
+    },
+    {
+      "status": "open",
+      "score": 12
+    }
+  ]
+}
